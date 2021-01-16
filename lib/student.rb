@@ -18,9 +18,10 @@ class Student
       id INTEGER PRIMARY KEY
       name text 
       grade INTEGER
-      );
-    
+      )
     SQL
+    
+    DB[:conn].execute(sql)
   end 
 
 
